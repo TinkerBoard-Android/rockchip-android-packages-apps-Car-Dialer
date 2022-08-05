@@ -29,4 +29,7 @@
     <drawable name="ic_audio_route_speaker">@drawable/ic_speaker_phone</drawable>
     <drawable name="ic_audio_route_speaker_activatable">@drawable/ic_speaker_phone_activatable
     </drawable>
+
+    <drawable name="ic_answer_icon">@null</drawable>
+    <drawable name="ic_decline_icon">@null</drawable>
 </resources>

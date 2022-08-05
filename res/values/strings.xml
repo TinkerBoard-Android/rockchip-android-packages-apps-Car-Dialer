@@ -180,6 +180,10 @@
     <string name="in_call_notification_channel_name">Incoming call notification</string>
     <!-- Text for incoming call notification [CHAR LIMIT=40]-->
     <string name="notification_incoming_call">Incoming call</string>
+    <!-- Text for incoming call notification with phone number -->
+    <string name="notification_incoming_call_join_number">
+        Incoming call * <xliff:g id="phone_number" example="511">%1$s</xliff:g>
+    </string>
     <!-- Name of missed call notification channel in app info [CHAR LIMIT=50] -->
     <string name="missed_call_notification_channel_name">Missed call notification</string>
     <!-- Title for missed call notification [CHAR LIMIT=40]-->

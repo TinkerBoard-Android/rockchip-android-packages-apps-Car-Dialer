@@ -63,6 +63,7 @@
     <string name="no_phone_numbers" msgid="8738691115921148445">"ఫోన్ నంబర్‌లు లేవు"</string>
     <string name="in_call_notification_channel_name" msgid="1978093630512401778">"ఇన్‌కమింగ్ కాల్ నోటిఫికేషన్"</string>
     <string name="notification_incoming_call" msgid="1722904631804432389">"ఇన్‌కమింగ్ కాల్"</string>
+    <string name="notification_incoming_call_join_number" msgid="6751753093958677973">"ఇన్‌కమింగ్ కాల్ * <xliff:g id="PHONE_NUMBER">%1$s</xliff:g>"</string>
     <string name="missed_call_notification_channel_name" msgid="1135686963409691772">"సమాధానమివ్వని కాల్ నోటిఫికేషన్"</string>
     <plurals name="notification_missed_call" formatted="false" msgid="1018870358427938752">
       <item quantity="other">మిస్డ్ కాల్స్‌(<xliff:g id="NUMBER">%1$d</xliff:g>) </item>
@@ -72,7 +73,7 @@
     <string name="swap_call_label" msgid="309322319645637302">"కాల్స్‌ల మధ్య స్విచ్ అవ్వండి"</string>
     <string name="setting_title" msgid="1296639422364732365">"సెట్టింగ్‌లు"</string>
     <string name="pref_start_page_title" msgid="1953465507368478503">"స్క్రీన్‌ను ప్రారంభించు"</string>
-    <string name="sort_order_title" msgid="975104366728292702">"పరిచయాల క్రమం"</string>
+    <string name="sort_order_title" msgid="975104366728292702">"కాంటాక్ట్‌ల క్రమం"</string>
     <string name="pref_connected_phone_title" msgid="5472866963149472593">"కనెక్ట్ అయిన ఫోన్"</string>
     <string name="pref_no_incoming_call_hun_title" msgid="2314257779205958332">"గోప్యత"</string>
     <string name="pref_no_incoming_call_hun_summary" msgid="8833377984331845097">"క్లస్టర్‌లో కాల్ అలర్ట్‌లను మాత్రమే చూపు"</string>

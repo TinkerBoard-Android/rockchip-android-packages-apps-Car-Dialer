@@ -63,6 +63,7 @@
     <string name="no_phone_numbers" msgid="8738691115921148445">"कोणतेही फोन नंबर नाहीत"</string>
     <string name="in_call_notification_channel_name" msgid="1978093630512401778">"येणाऱ्या कॉलची सूचना"</string>
     <string name="notification_incoming_call" msgid="1722904631804432389">"येणारा कॉल"</string>
+    <string name="notification_incoming_call_join_number" msgid="6751753093958677973">"इनकमिंग कॉल * <xliff:g id="PHONE_NUMBER">%1$s</xliff:g>"</string>
     <string name="missed_call_notification_channel_name" msgid="1135686963409691772">"मिस्ड कॉलची सूचना"</string>
     <plurals name="notification_missed_call" formatted="false" msgid="1018870358427938752">
       <item quantity="other">(<xliff:g id="NUMBER">%1$d</xliff:g>) मिस्ड कॉल </item>

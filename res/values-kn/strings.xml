@@ -63,6 +63,7 @@
     <string name="no_phone_numbers" msgid="8738691115921148445">"ಯಾವುದೇ ಫೋನ್ ಸಂಖ್ಯೆಗಳಿಲ್ಲ"</string>
     <string name="in_call_notification_channel_name" msgid="1978093630512401778">"ಒಳಬರುವ ಕರೆ ಅಧಿಸೂಚನೆ"</string>
     <string name="notification_incoming_call" msgid="1722904631804432389">"ಒಳಬರುವ ಕರೆ"</string>
+    <string name="notification_incoming_call_join_number" msgid="6751753093958677973">"ಒಳಬರುವ ಕರೆ * <xliff:g id="PHONE_NUMBER">%1$s</xliff:g>"</string>
     <string name="missed_call_notification_channel_name" msgid="1135686963409691772">"ಮಿಸ್ಡ್ ಕಾಲ್ ಅಧಿಸೂಚನೆ"</string>
     <plurals name="notification_missed_call" formatted="false" msgid="1018870358427938752">
       <item quantity="one">ಮಿಸ್ಡ್‌ ಕರೆಗಳು (<xliff:g id="NUMBER">%1$d</xliff:g>) </item>

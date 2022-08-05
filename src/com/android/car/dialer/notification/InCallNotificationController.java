@@ -26,6 +26,7 @@ import android.graphics.drawable.Icon;
 import android.telecom.Call;
 import android.text.TextUtils;
 
+import androidx.annotation.DrawableRes;
 import androidx.annotation.StringRes;
 
 import com.android.car.dialer.R;
@@ -104,9 +105,9 @@ public final class InCallNotificationController {
                 .setContentTitle(TelecomUtils.getBidiWrappedNumber(callNumber))
                 .setContentText(mContext.getString(R.string.notification_incoming_call))
                 .setActions(
-                        getAction(call, R.string.answer_call,
+                        getAction(call, R.string.answer_call, R.drawable.ic_answer_icon,
                                 NotificationService.ACTION_ANSWER_CALL),
-                        getAction(call, R.string.decline_call,
+                        getAction(call, R.string.decline_call, R.drawable.ic_decline_icon,
                                 NotificationService.ACTION_DECLINE_CALL));
         mNotificationManager.notify(
                 callNumber,
@@ -120,6 +121,15 @@ public final class InCallNotificationController {
                         mNotificationBuilder
                                 .setLargeIcon(pair.second)
                                 .setContentTitle(TelecomUtils.getBidiWrappedNumber(pair.first));
+
+                        String readableNumber = TelecomUtils.getReadableNumber(
+                                mContext, callNumber);
+                        if (!TextUtils.equals(readableNumber, pair.first)) {
+                            mNotificationBuilder.setContentText(
+                                    mContext.getString(
+                                            R.string.notification_incoming_call_join_number,
+                                            TelecomUtils.getBidiWrappedNumber(readableNumber)));
+                        }
 
                         mNotificationManager.notify(
                                 callNumber,
@@ -157,14 +167,15 @@ public final class InCallNotificationController {
     }
 
     private Notification.Action getAction(Call call, @StringRes int actionText,
-            String intentAction) {
+            @DrawableRes int actionIcon, String intentAction) {
         CharSequence text = mContext.getString(actionText);
+        Icon icon = Icon.createWithResource(mContext, actionIcon);
         PendingIntent intent = PendingIntent.getService(
                 mContext,
                 0,
                 getIntent(intentAction, call),
                 PendingIntent.FLAG_UPDATE_CURRENT | PendingIntent.FLAG_IMMUTABLE);
-        return new Notification.Action.Builder(null, text, intent).build();
+        return new Notification.Action.Builder(icon, text, intent).build();
     }
 
     private Intent getIntent(String action, Call call) {

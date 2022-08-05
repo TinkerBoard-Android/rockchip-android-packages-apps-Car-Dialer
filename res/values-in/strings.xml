@@ -63,6 +63,7 @@
     <string name="no_phone_numbers" msgid="8738691115921148445">"Nomor telepon tidak ada"</string>
     <string name="in_call_notification_channel_name" msgid="1978093630512401778">"Notifikasi panggilan masuk"</string>
     <string name="notification_incoming_call" msgid="1722904631804432389">"Panggilan masuk"</string>
+    <string name="notification_incoming_call_join_number" msgid="6751753093958677973">"Panggilan masuk * <xliff:g id="PHONE_NUMBER">%1$s</xliff:g>"</string>
     <string name="missed_call_notification_channel_name" msgid="1135686963409691772">"Notifikasi panggilan tak terjawab"</string>
     <plurals name="notification_missed_call" formatted="false" msgid="1018870358427938752">
       <item quantity="other">Panggilan tak terjawab(<xliff:g id="NUMBER">%1$d</xliff:g>) </item>

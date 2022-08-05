@@ -63,6 +63,7 @@
     <string name="no_phone_numbers" msgid="8738691115921148445">"Телефон нөмірлері жоқ"</string>
     <string name="in_call_notification_channel_name" msgid="1978093630512401778">"Келген қоңырау туралы хабарландыру"</string>
     <string name="notification_incoming_call" msgid="1722904631804432389">"Кіріс қоңырау"</string>
+    <string name="notification_incoming_call_join_number" msgid="6751753093958677973">"Кіріс қоңырау * <xliff:g id="PHONE_NUMBER">%1$s</xliff:g>"</string>
     <string name="missed_call_notification_channel_name" msgid="1135686963409691772">"Өткізіп алған қоңырау туралы хабарландыру"</string>
     <plurals name="notification_missed_call" formatted="false" msgid="1018870358427938752">
       <item quantity="other">Өткізіп алған қоңыраулар (<xliff:g id="NUMBER">%1$d</xliff:g>) </item>
